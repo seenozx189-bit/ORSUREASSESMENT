@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ORASURE — Product Mockups Presentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F6F4EF;
+      color: #1D251A;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .pdf-page {
+      width: 297mm;
+      height: 210mm;
+      page-break-after: always;
+      position: relative;
+      background-color: #F6F4EF;
+      padding: 16mm 20mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .pdf-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #E2DDD4;
+      padding-bottom: 4mm;
+    }
+    .brand-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20pt;
+      letter-spacing: 0.35em;
+      font-weight: 600;
+      color: #273420;
+    }
+    .doc-type {
+      font-size: 9pt;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: #738459;
+      text-transform: uppercase;
+    }
+    .pdf-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #E2DDD4;
+      padding-top: 3.5mm;
+      font-size: 8.5pt;
+      color: #827E74;
+    }
+    .footer-designer {
+      font-weight: 600;
+      color: #273420;
+    }
+    /* Cover Page */
+    .cover-content {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 15mm;
+      flex: 1;
+      padding: 8mm 0;
+    }
+    .cover-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 34pt;
+      font-weight: 600;
+      line-height: 1.15;
+      color: #192215;
+      margin-bottom: 6mm;
+    }
+    .cover-desc {
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #5C584E;
+      margin-bottom: 8mm;
+    }
+    .specs-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3mm;
+    }
+    .specs-pill {
+      background: #EFECE5;
+      border: 1px solid #DFD9CE;
+      padding: 2.5mm 5mm;
+      border-radius: 9999px;
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #273420;
+    }
+    .cover-hero-img-wrap {
+      background: #FFFFFF;
+      border-radius: 6mm;
+      overflow: hidden;
+      border: 1px solid #DFD9CE;
+      box-shadow: 0 8px 30px rgba(39, 52, 32, 0.08);
+      max-height: 130mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cover-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Scene Pages */
+    .scene-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4mm 0;
+      gap: 4mm;
+    }
+    .scene-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .scene-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18pt;
+      font-weight: 600;
+      color: #273420;
+    }
+    .scene-caption {
+      font-size: 9.5pt;
+      color: #5C584E;
+    }
+    .scene-img-frame {
+      background: #FFFFFF;
+      border: 1px solid #DFD9CE;
+      border-radius: 5mm;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(39, 52, 32, 0.06);
+      height: 135mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .scene-full-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COVER -->
+  <div class="pdf-page">
+    <div class="pdf-header">
+      <div class="brand-title">O R A S U R E</div>
+      <div class="doc-type">3D Product Mockups Showcase</div>
+    </div>
+    
+    <div class="cover-content">
+      <div>
+        <h1 class="cover-title">Product Mockup<br>Applications & Renders</h1>
+        <p class="cover-desc">
+          High-resolution 3D visual presentation of the ORASURE Hamper Box packaging direction. Demonstrates real-world light behavior, matte board lamination, precision gold ripple foil stamping, and botanical wraparound panels.
+        </p>
+        <div class="specs-pill-group">
+          <span class="specs-pill">Dimensions: 30 × 24 × 10 cm</span>
+          <span class="specs-pill">Material: 3 mm Kappa Board</span>
+          <span class="specs-pill">Finish: Matte + Gold Foil</span>
+          <span class="specs-pill">Closure: Magnetic Lock</span>
+        </div>
+      </div>
+      <div class="cover-hero-img-wrap">
+        <img src="public/images/mockup-flatlay.jpg" alt="Hero Mockup" class="cover-hero-img">
+      </div>
+    </div>
+
+    <div class="pdf-footer">
+      <div>ORASURE Hamper Box Design Assessment</div>
+      <div>Designed & presented by <span class="footer-designer">Sachin / Seenozx</span></div>
+      <div>Page 01 / 04</div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: SCENE 01 -->
+  <div class="pdf-page">
+    <div class="pdf-header">
+      <div class="brand-title">O R A S U R E</div>
+      <div class="doc-type">01. Perspective Dual Box Scene</div>
+    </div>
+
+    <div class="scene-body">
+      <div class="scene-meta-bar">
+        <h2 class="scene-title">Perspective Front & Spine Application</h2>
+        <span class="scene-caption">Displays top 30×24 cm lid artwork paired with dark olive botanical side panel</span>
+      </div>
+      <div class="scene-img-frame">
+        <img src="public/images/mockup-perspective.jpg" alt="Scene 01 Perspective" class="scene-full-img">
+      </div>
+    </div>
+
+    <div class="pdf-footer">
+      <div>ORASURE Hamper Box Design Assessment</div>
+      <div>Designed & presented by <span class="footer-designer">Sachin / Seenozx</span></div>
+      <div>Page 02 / 04</div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: SCENE 02 -->
+  <div class="pdf-page">
+    <div class="pdf-header">
+      <div class="brand-title">O R A S U R E</div>
+      <div class="doc-type">02. Flat-lay Natural Lighting Scene</div>
+    </div>
+
+    <div class="scene-body">
+      <div class="scene-meta-bar">
+        <h2 class="scene-title">Flat-lay Sunlight & Organic Shadow Interplay</h2>
+        <span class="scene-caption">High-angle ambient scene highlighting organic olive foliage, natural stone texture, and gold foil</span>
+      </div>
+      <div class="scene-img-frame">
+        <img src="public/images/mockup-flatlay.jpg" alt="Scene 02 Flatlay" class="scene-full-img">
+      </div>
+    </div>
+
+    <div class="pdf-footer">
+      <div>ORASURE Hamper Box Design Assessment</div>
+      <div>Designed & presented by <span class="footer-designer">Sachin / Seenozx</span></div>
+      <div>Page 03 / 04</div>
+    </div>
+  </div>
+
+  <!-- PAGE 4: SCENE 03 -->
+  <div class="pdf-page">
+    <div class="pdf-header">
+      <div class="brand-title">O R A S U R E</div>
+      <div class="doc-type">03. Angled Beauty Shot</div>
+    </div>
+
+    <div class="scene-body">
+      <div class="scene-meta-bar">
+        <h2 class="scene-title">Tactile Finish & Corner Wrap Detail</h2>
+        <span class="scene-caption">Showcases lid edge alignment, delicate gold oil drop ripple stamping, and organic paper texture</span>
+      </div>
+      <div class="scene-img-frame">
+        <img src="public/images/mockup-angled.jpg" alt="Scene 03 Angled" class="scene-full-img">
+      </div>
+    </div>
+
+    <div class="pdf-footer">
+      <div>ORASURE Hamper Box Design Assessment</div>
+      <div>Designed & presented by <span class="footer-designer">Sachin / Seenozx</span></div>
+      <div>Page 04 / 04</div>
+    </div>
+  </div>
+
+</body>
+</html>
